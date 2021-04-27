@@ -1,0 +1,31 @@
+doctype html
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    meta(http-equiv="X-UA-Compatible", content="IE=edge")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    link(rel='stylesheet', href='/stylesheets/postAdd.css')
+    link(rel='stylesheet', href='/stylesheets/reset.css')
+    script(defer src="/javascripts/add.js")
+    title Document
+  body 
+    .main-container
+      .main-list-wrap
+        .title-box
+          .title 제목 :
+          input.title-input(type="text", placeholder="제목")
+        .writer-box 
+          .writer 작성자 :
+          input.writer-input(type="text", placeholder="작성자")
+        .content-box 
+          .content 내용
+          .content-input
+            input(type="text", placeholder="내용")
+        .password-box 
+          .password 비밀번호
+          .password-input
+            input(type="password", placeholder="비밀번호")
+      a.add-button(
+          href="/"
+        )
+        button 등록

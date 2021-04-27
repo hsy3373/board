@@ -1,0 +1,59 @@
+.main-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #77b7d9;
+  width: 100%;
+  height: 100vh;
+  padding: 0px 180px;
+  box-sizing: border-box;
+}
+.main-list-wrap {
+  border-radius: 20px;
+  margin-top: 80px;
+  width: 100%;
+  height: 480px;
+  background: #ffffff;
+}
+
+.title-bar {
+  display: flex;
+  width: 100%;
+  height: 80px;
+  background: #dddddd;
+}
+
+.number,
+.created-time,
+.creater {
+  flex-grow: 1;
+}
+
+.title {
+  flex-grow: 2;
+}
+
+.number,
+.created-time,
+.creater,
+.title {
+  font-size: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.main-add-button {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-self: flex-end;
+  font-size: 18px;
+  margin-top: 40px;
+  width: 80px;
+  height: 40px;
+  color: #999999;
+  background: paleturquoise;
+  border-radius: 12px;
+}
