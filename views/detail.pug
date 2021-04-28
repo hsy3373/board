@@ -6,13 +6,14 @@ html(lang="en")
     meta(name="viewport", content="width=device-width, initial-scale=1.0")
     link(rel='stylesheet', href='/stylesheets/postAdd.css')
     link(rel='stylesheet', href='/stylesheets/reset.css')
-    script(defer src="/javascripts/add.js")
+    script(defer src="/javascripts/detailjs.js")
+
     title Document
   body 
     .main-container
       .main-list-wrap
         .title-box
-          .title 제목 :
+          .title 제1 :
           input.title-input(type="text", placeholder="제목")
         .writer-box 
           .writer 작성자 :
@@ -24,7 +25,3 @@ html(lang="en")
         .password-box 
           .password 비밀번호
           input.password-input(type="password", placeholder="비밀번호")
-      a.add-button(
-          href="/"
-        )
-        button 등록
