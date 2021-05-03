@@ -14,18 +14,13 @@ html(lang="en")
         .title-box
           .title 제목 :
           input.title-input(type="text", placeholder="제목")
-        .writer-box 
+        .writer-box
           .writer 작성자 :
           input.writer-input(type="text", placeholder="작성자")
-        .content-box 
+        .content-box
           .content 내용
-          .content-input
-            input(type="text", placeholder="내용")
-        .password-box 
+          input.content-input(type="text", placeholder="내용")
+        .password-box
           .password 비밀번호
-          .password-input
-            input(type="password", placeholder="비밀번호")
-      a.add-button(
-          href="/"
-        )
-        button 등록
+          input.password-input(type="password", placeholder="비밀번호")
+      button.add-button 등록

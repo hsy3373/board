@@ -15,6 +15,13 @@ html(lang="en")
           .title 제목
           .created-time 작성일 
           .creater 작성자
+        .post-list
+          each item, index in data
+            .post-item
+              .number= index + 1
+              .title= item.title
+              .created-time= item.date
+              .creater= item.writer
       a.main-add-button(
         href="/post/add"
       ) ㄸ얏
