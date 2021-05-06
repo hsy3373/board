@@ -8,7 +8,7 @@ const mongoose = require('mongoose');
 const indexRouter = require('./routes/index');
 const usersRouter = require('./routes/users');
 const postRouter = require('./routes/post');
-const testRouter = require('./routes/test');
+const testRouter = require('./routes/detail');
 const app = express();
 const MONGO_URI = 'mongodb://localhost:27017/alcoolding';
 
@@ -25,7 +25,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
 app.use('/post', postRouter);
-app.use('/test', testRouter);
+app.use('/detail', testRouter);
 
 // CONNECT TO MONGODB SERVER
 mongoose
