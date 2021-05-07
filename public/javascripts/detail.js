@@ -1,9 +1,18 @@
-const item = document.querySelector('.post-item');
-const title = document.querySelector('.title');
 
-item.addEventListener('click',goDetail);
+const Board = require('../../models/board');
 
-function goDetail() {
-  href= "http://localhost:3000/detail"
-  console.log("왱왱");
+async function whatBoard(){
+  const boards = await Board.find({}).sort({ createdAt: -1 });
+  const result = boards.map((item) => {
+    if (item.createdAt) {
+      item.date = moment(item.createdAt).format('YYYY-MM-DD');
+    }
+    return item;
+  });
+  
+  console.log(result);
 }
+
+
+
+whatBoard();
