@@ -1,7 +1,7 @@
 const titleInput = document.querySelector('input.title-input');
 const addButton = document.querySelector('button.add-button');
 const writerInput = document.querySelector('input.writer-input');
-const contentInput = document.querySelector('input.content-input');
+const contentInput = document.querySelector('textarea.content-input');
 const passwordInput = document.querySelector('input.password-input');
 
 function getBoardPayload() {

@@ -6,21 +6,21 @@ html(lang="en")
     meta(name="viewport", content="width=device-width, initial-scale=1.0")
     link(rel='stylesheet', href='/stylesheets/postAdd.css')
     link(rel='stylesheet', href='/stylesheets/reset.css')
-    script(defer src="/javascripts/add.js")
+    script(defer src="/javascripts/update.js")
     title Document
   body 
     .main-container
       .main-list-wrap
         .title-box
           .title 제목 :
-          input.title-input(type="text", placeholder="제목")
+          input.title-input(type="text", placeholder="제목" value=data.title)
         .writer-box
           .writer 작성자 :
-          input.writer-input(type="text", placeholder="작성자")
+          input.writer-input(type="text", placeholder="작성자" value=data.writer)
         .content-box
           .content 내용
-          textarea.content-input(type="text", placeholder="내용" )
+          textarea.content-input(type="text", placeholder="내용" )=data.content
         .password-box
           .password 비밀번호
-          input.password-input(type="password", placeholder="비밀번호")
-      button.add-button 등록
+          input.password-input(type="text", placeholder="비밀번호" value=data.password)
+      button.update-button 수정

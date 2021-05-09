@@ -9,6 +9,7 @@ const indexRouter = require('./routes/index');
 const usersRouter = require('./routes/users');
 const postRouter = require('./routes/post');
 const testRouter = require('./routes/detail');
+const updateRouter = require('./routes/update');
 const app = express();
 const MONGO_URI = 'mongodb://localhost:27017/alcoolding';
 
@@ -22,11 +23,11 @@ app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
-
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
 app.use('/post', postRouter);
 app.use('/detail', testRouter);
+app.use('/update', updateRouter);
 
 // CONNECT TO MONGODB SERVER
 mongoose

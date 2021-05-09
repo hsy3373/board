@@ -6,7 +6,7 @@ html(lang="en")
     meta(name="viewport", content="width=device-width, initial-scale=1.0")
     link(rel='stylesheet', href='/stylesheets/reset.css')
     link(rel='stylesheet', href='/stylesheets/main.css')
-    script(src="/javascripts/main.js") 
+    script(async src="/javascripts/main.js") 
     title Document
   body
     .main-container
@@ -18,7 +18,8 @@ html(lang="en")
           .creater 작성자
         .post-list
           each item, index in data
-            .post-item
+            - const url = `http://localhost:3000/detail/${item._id}`
+            a.post-item(href=url)
               .number= index + 1
               .title= item.title
               .created-time= item.date
